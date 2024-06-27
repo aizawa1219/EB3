@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--タブに出る文言-->
+<title>ワーク1</title>
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(work1/back.gif);
+    /* background: repeating-linear-gradient(
+        135deg, #ccc, #ccc 2px, #fff, #fff 4px); */
+}
+#container{
+    width: 780px;
+    /* height: 1000px; */
+    margin: 0 auto;
+    background-color: #fff;
+}
+#contents{
+    overflow: hidden;
+}
+#header{
+    background-image: url(work1/logo.png);
+    height: 100px;
+    width: 400px;
+}
+li{
+    /* list-style-typeは、リストのマーカー(点や丸など)を設定。noneはマーカー無し。 */
+    list-style-type: none;
+    /* floatを設定しなければリストは縦に並ぶ */
+    float: left;
+    width: 156px;
+    height: 40px;
+}
+li.navi1{
+    background-image: url(work1/navi_01.png);
+}
+li.navi2{
+    background-image: url(work1/navi_02.png);
+}
+li.navi3{
+    background-image: url(work1/navi_03.png);
+}
+li.navi4{
+    background-image: url(work1/navi_04.png);
+}
+li.navi5{
+    background-image: url(work1/navi_05.png);
+}
+
+#key{
+    background-image: url(work1/key_image.png);
+    width: 780px;
+    height: 250px;
+    overflow: hidden;
+}
+#maintitle{
+    background-image: url(work1/main_title.png);
+    width: 750px;
+    height: 40px;
+    margin: 10px 15px;
+    /* 要素をその前にある浮動要素の下に移動 (clear) する必要があるかどうかを設定 */
+    clear: both;
+}
+p{
+    margin: 0 15px;
+    font-size: 12px;
+}
+p.right{
+    margin-left: 5px;
+}
+
+h5{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.box{
+    background-image: url(work1/main_img.png);
+    width: 275px;
+    height: 150px;
+    /* ブロックの周りを文字などが回りこめる。 */
+    float: left;
+    margin: 0 7px 0 15px;
+    margin-bottom:15px ;
+
+}
+#footer{
+    background-image: url(work1/footer.png);
+    width: 780px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    
+}
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="header"></div>
+            <div id="contents">
+            <ul>
+                <li class="navi1"></li>
+                <li class="navi2"></li>
+                <li class="navi3"></li>
+                <li class="navi4"></li>
+                <li class="navi5"></li>
+            </ul>
+            <div id="key"></div>
+            <div id="maintitle"></div>
+                <p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。</p>
+                <h5>小見出し</h5>
+            <div class="box"></div>
+                <p>ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。
+                    ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。
+                ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。
+                </p>
+                <div id="maintitle"></div>
+                <p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。</p>
+                <h5>小見出し</h5>
+            <div class="box"></div>
+                <p>ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。
+                    ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。
+                ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。
+                </p>
+            </div>
+        <div id="footer">Copyright © サイト構築練習 All Rights Reserved</div>
+    </div>
+</body>

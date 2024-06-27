@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--タブに出る文言-->
+<title>ワーク4</title>
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(work4/back.gif);
+    /* background: repeating-linear-gradient(
+        135deg, #ccc, #ccc 2px, #fff, #fff 4px); */
+}
+#container{
+    width: 780px;
+    /* height: 1000px; */
+    margin: 0 auto;
+    background-color: #fff;
+}
+#contents{
+    overflow: hidden;
+}
+li.header{
+    background-image: url(work4/logo.png);
+    height: 100px;
+    width: 400px;
+    float: left;
+}
+li.header_right{
+    font-size: 13px;
+    margin-top: 10px;
+    float:right;
+}
+li.arrow1{
+    background-image: url(work4/arrow01.png);
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+li.arrow2{
+    background-image: url(work4/arrow02.png);
+    width: 10px;
+    height: 10px;
+    float: right;
+    margin-right: 5px;
+    margin-top: 4px;
+}
+li.head1{
+    float: right;
+    margin-right: 17px;
+}
+li.head2{
+    float: right;
+    margin-right: 15px;
+}
+
+ul{
+    overflow: hidden;
+}
+ul.left{
+    float: left;
+}
+ul.right{
+    float: right;
+}
+li{
+    list-style-type: none;
+    font-size: 12px;
+}
+li.navi1{
+    background-image: url(work4/navi_01.png);
+    /* floatを設定しなければリストは縦に並ぶ */
+    float: left;
+    width: 156px;
+    height: 40px;
+    font-size: 12px;
+}
+li.navi2{
+    background-image: url(work4/navi_02.png);
+    /* floatを設定しなければリストは縦に並ぶ */
+    float: left;
+    width: 156px;
+    height: 40px;
+    font-size: 12px;
+}
+li.navi3{
+    background-image: url(work4/navi_03.png);
+    /* floatを設定しなければリストは縦に並ぶ */
+    float: left;
+    width: 156px;
+    height: 40px;
+    font-size: 12px;
+}
+li.navi4{
+    background-image: url(work4/navi_04.png);
+    /* floatを設定しなければリストは縦に並ぶ */
+    float: left;
+    width: 156px;
+    height: 40px;
+    font-size: 12px;
+}
+li.navi5{
+    background-image: url(work4/navi_05.png);
+    /* floatを設定しなければリストは縦に並ぶ */
+    float: left;
+    width: 156px;
+    height: 40px;
+    font-size: 12px;
+}
+
+
+#key{
+    background-image: url(work4/key_image.png);
+    width: 780px;
+    height: 250px;
+    overflow: hidden;
+}
+/*  */
+li.contents_right{
+    background-image: url(work4/main_right.png);
+    width: 180px;
+    height: 30px;
+    margin: 15px 10px 10px 5px;
+    float: right;
+}
+li.contents_left{
+    background-image: url(work4/main_left.png);
+    width: 380px;
+    height: 30px;
+    margin: 15px 5px 10px 5px;
+    float: right;
+}
+
+li.sidemenu{
+    background-image: url(work4/side.png);
+    width: 180px;
+    height: 30px;
+    margin: 15px 5px 0 10px;
+    float: left;
+}
+/*  */
+
+li.snavi{
+    background-image: url(work4/s_navi.png);
+    width: 160px;
+    height: 40px;
+    margin: 6px 15px 11px 18px;
+    /* clear: both; */
+}
+
+li.banner{
+    background-image: url(work4/banner.png);
+    width: 160px;
+    height: 50px;
+    margin: 6px 20px 8px 15px;
+    /* clear: both; */
+}
+
+.main_big{
+    background-image: url(work4/main_image.png);
+    width: 380px;
+    height: 250px;
+    margin: 6px 0 8px 6px;
+    float: left;
+}
+
+.news{
+    background-image: url(work4/news.png);
+    width: 380px;
+    height: 30px;
+    margin: auto;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+p{
+    font-size: 12px;
+    float: right;
+    width: 380px;
+    margin-right: 7px;
+    margin-bottom: 8px;
+}
+
+#scroll{
+    overflow: auto;
+    width: 380px;
+    height: 150px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+}
+li.data{
+    width: 150px;
+    margin: 8px 0 8px 12px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+    font-weight: bold;
+}
+li.info{
+    width: 180px;
+    margin: 8px 0 8px 8px;
+    height: auto;
+    overflow: hidden;
+    float: left;
+}
+
+hr{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-left: 0;
+}
+
+li.name_left{
+    margin-left: 200px;
+    float: left;
+}
+li.name_right{
+    margin-left: 145px;
+    float: left;
+}
+li.image_left{
+    background-image: url(work4/main_img.png);
+    width: 180px;
+    height: 150px;
+    margin-left: 200px;
+    float: left;
+}
+li.image_right{
+    background-image: url(work4/main_img.png);
+    width: 180px;
+    height: 150px;
+    margin-left: 20px;
+    float: left;
+}
+
+li.text_left{
+    font-size: 12px;
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-left:200px ;
+    margin-bottom: 20px;
+}
+li.text_right{
+    font-size: 12px;
+    width: 180px;
+    height: auto;
+    float: left;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+#footer{
+    background-image: url(work3/footer.png);
+    width: 780px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+}
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <ul>
+            <li class="header"></li>
+            <li class="header_right">
+                <ul>
+                    <li class="head1">お問い合わせ</li>
+                    <li class="arrow2"></li>
+                    <li class="head2">サイトマップ</li>
+                    <li class="arrow1"></li>
+                </ul>
+            </li>
+        </ul>
+            <div id="contents">
+            <ul>
+                <li class="navi1"></li>
+                <li class="navi2"></li>
+                <li class="navi3"></li>
+                <li class="navi4"></li>
+                <li class="navi5"></li>
+            </ul>
+            <div id="key"></div>
+            <ul>
+                <li class="contents_right"></li>
+                <li class="contents_left"></li>
+                <li class="sidemenu"></li>
+            </ul>
+            <ul class="left">
+                <li class="snavi"></li>
+                <li class="snavi"></li>
+                <li class="snavi"></li>
+                <li class="snavi"></li>
+                <li class="snavi"></li>
+            </ul>
+            <ul class="right">
+                <li class="banner"></li>
+                <li class="banner"></li>
+                <li class="banner"></li>
+                <li class="banner"></li>
+                <li class="banner"></li>
+            </ul>
+            <div class="main_big"></div>
+            
+            <p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</p>
+
+            <div class="news"></div>
+
+            <div id="scroll">
+                <ul>
+                    <li class="data">2011年00月00日（●）</li>
+                    <li class="info">
+                        ここに情報が入ります。ここに情報が入ります。ここに情報が入ります。ここに情報が入ります。
+                        
+                    </li>
+                </ul>
+                <hr>
+                <ul>
+                    <li class="data">2011年00月00日（●）</li>
+                    <li class="info">
+                        ここに情報が入ります。ここに情報が入ります。ここに情報が入ります。ここに情報が入ります。
+                    </li>
+                </ul>
+                <hr>
+                <ul>
+                    <li class="data">2011年00月00日（●）</li>
+                    <li class="info">
+                        ここに情報が入ります。ここに情報が入ります。ここに情報が入ります。ここに情報が入ります。
+                    </li>
+                </ul>
+            </div>
+            <ul>
+                <li class="name_left"><h4>写真の名前</h4></li>
+                <li class="name_right"><h4>写真の名前</h4></li>
+            </ul>
+
+            <ul>
+                <li class="image_left"></li>
+                <li class="image_right"></li>
+            </ul>
+
+            <ul>
+                <li class="text_left">ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。</li>
+                <li class="text_right">ここに写真の説明文が入ります。ここに写真の説明文が入ります。ここに写真の説明文が入ります。</li>
+            </ul>
+           
+            </div>
+        <div id="footer">Copyright © サイト構築練習 All Rights Reserved</div>
+    </div>
+</body>

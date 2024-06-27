@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--タブに出る文言-->
+<title>ワーク2</title>
+<style type="text/css">
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url(work2/back.gif);
+    /* background: repeating-linear-gradient(
+        135deg, #ccc, #ccc 2px, #fff, #fff 4px); */
+}
+#container{
+    width: 780px;
+    /* height: 1000px; */
+    margin: 0 auto;
+    background-color: #fff;
+}
+#contents{
+    overflow: hidden;
+}
+#header{
+    background-image: url(work2/logo.png);
+    height: 100px;
+    width: 400px;
+}
+ul{
+    overflow: hidden;
+}
+li{
+    /* list-style-typeは、リストのマーカー(点や丸など)を設定。noneはマーカー無し。 */
+    list-style-type: none;
+    /* floatを設定しなければリストは縦に並ぶ */
+    float: left;
+    width: 156px;
+    height: 40px;
+    font-size: 12px;
+}
+li.navi1{
+    background-image: url(work2/navi_01.png);
+}
+li.navi2{
+    background-image: url(work2/navi_02.png);
+}
+li.navi3{
+    background-image: url(work2/navi_03.png);
+}
+li.navi4{
+    background-image: url(work2/navi_04.png);
+}
+li.navi5{
+    background-image: url(work2/navi_05.png);
+}
+
+#key{
+    background-image: url(work2/key_image.png);
+    width: 780px;
+    height: 250px;
+    overflow: hidden;
+}
+#maintitle{
+    background-image: url(work2/main_title.png);
+    width: 750px;
+    height: 40px;
+    margin: 15px 15px 8px 15px;
+    /* 要素をその前にある浮動要素の下に移動 (clear) する必要があるかどうかを設定 */
+    clear: both;
+}
+p{
+    margin: 0 15px;
+    font-size: 12px;
+    clear: both;
+}
+
+h5{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+li.sub1{
+    background-image: url(work2/sub_title.png);
+    width: 365px;
+    height: 30px;
+    margin: 15px 0 8px 15px;
+    float: left;
+}
+li.sub2{
+    background-image: url(work2/sub_title.png);
+    width: 365px;
+    height: 30px;
+    margin: 15px 15px 8px 0;
+    float: right;
+}
+li.text1{
+    width: 365px;
+    height: auto;
+    margin: 0 0 2px 15px;
+    float: left;
+    clear: left;
+}
+li.text2{
+    width: 365px;
+    height: auto;
+    margin: 0 15px 2px 0;
+    float: right;
+    clear: right;
+}
+#scroll{
+    overflow: auto;
+    width: 765px;
+    height: 185px;
+    margin-bottom: 15px;
+}
+li.data{
+    width: 160px;
+    height: auto;
+    margin-left: 30px;
+    overflow: hidden;
+    margin-top: 7px;
+    font-weight: bold;
+}
+li.info{
+    width: 540px;
+    height: auto;
+    overflow: hidden;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    margin-right: 2px;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid #ccc;
+    margin-left: 15px;
+}
+#footer{
+    background-image: url(work1/footer.png);
+    width: 780px;
+    height: 50px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    
+}
+
+</style>
+</head>
+<body>
+    <div id="container">
+        <div id="header"></div>
+            <div id="contents">
+            <ul>
+                <li class="navi1"></li>
+                <li class="navi2"></li>
+                <li class="navi3"></li>
+                <li class="navi4"></li>
+                <li class="navi5"></li>
+            </ul>
+            <div id="key"></div>
+            <div id="maintitle"></div>
+                <p>ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。</p>
+                
+            <ul>
+                <li class="sub1"></li>
+
+                <li class="sub2"></li>
+            </ul>
+
+            <ul>
+                <li class="text1">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</li>
+
+                <li class="text2">ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。
+                    ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。ここに文章が入ります。</li>
+            </ul>
+
+                <div id="maintitle"></div>
+                <div id="scroll">
+                    <ul>
+                        <li class="data">2011年00月00日（●）</li>
+                        <li class="info">
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。
+                            
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li class="data">2011年00月00日（●）</li>
+                        <li class="info">
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。
+                        </li>
+                    </ul>
+                    <hr>
+                    <ul>
+                        <li class="data">2011年00月00日（●）</li>
+                        <li class="info">
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。ここに新着情報が入ります。
+                            ここに新着情報が入ります。
+                        </li>
+                    </ul>
+                    <hr>
+                    </div>
+                </div>
+                
+
+            <!-- <div class="box"></div>
+                <p>ここに写真の説明が入ります。ここに写真の説明が入ります。ここに写真の説明が入ります。
+                    ここに写真の説明が入ります。ここに写真の説明が入ります。ここに写真の説明が入ります。
+                ここに写真の説明が入ります。ここに写真の説明が入ります。ここに写真の説明が入ります。
+                </p>
+            </div> -->
+        <div id="footer">Copyright © サイト構築練習 All Rights Reserved</div>
+    </div>
+</body>

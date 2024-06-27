@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<!--タブに出る文言-->
+<title>work11</title>
+<style type="text/css">
+/* デフォルト値の初期化 */
+body{
+    background-image : url(http://no1s.biz/kenshu/image/texture001.png);
+}
+#container{
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
+h1{
+    background-image : url(http://no1s.biz/kenshu/image/pattern02.jpg);
+    color: #0000ff;
+    padding: 10px;
+    text-align: center;
+}
+#description{
+    background-image : url(http://no1s.biz/kenshu/image/pattern04.jpg);
+    padding: 10px;
+    color: #fff;
+}
+dl{
+    margin: 10px;
+}
+dt{
+    background-image : url(http://no1s.biz/kenshu/image/pattern03.jpg);
+    padding: 5px;
+}
+dd{
+    background-image : url(http://no1s.biz/kenshu/image/pattern02.jpg);
+    /* margin 「上下　左右」の設定 */
+    margin: 10px 0;
+    padding: 10px;
+}
+
+</style>
+</head>
+<!-- 赤の背景色の中にある -->
+<body>
+    <!-- 白の大きなボックスの中の -->
+    <div id="container">
+        <!-- 青で囲まれた見出し -->
+        <h1>Java開発のためのPlayFramework</h1>
+        <!-- 青の見出しの下にあるサブタイトル的なもの -->
+        <p id="description">「Play Framework」は、サーバサイドJavaとScaleのためのMVCフレームワークです。</p>
+        <p id="subtitle"></p>
+        <dl>
+            <!-- 小見出し -->
+            <dt>設定より規約</dt>
+            <!-- その下の説明。灰色の背景色 -->
+            <dd>いままでのJavaのWebフレームワークはXMLなでの設定ファイルを中心に駆動する仕組みでした。
+                「設定より規約」とは、フレームワークで一定のルールを定め、それに従うことで設定ファイルを
+                書かないでも動くような仕組みを提供します</dd>
+
+            <!-- 小見出し -->
+            <dt>繰り返しを避ける</dt>
+            <!-- その下の説明。灰色の背景色 -->
+            <dd>「繰り返しを避ける」とは、「１つのことを表すのに、記述個所を１つに限定する」という考え方です。
+                皆さん意識しているのですが、意識するだけでは難しく、どうしても重複コードを書いてしまいます。
+                コードを重複させてしまった場合、どう重複のないコードに軌道修正できるかが大切です。つまり、
+                リファクタリングしやすいフレームワークであることが重要です</dd>
+        </dl>
+    </div>
+</body>
+</html>
